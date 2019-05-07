@@ -1,0 +1,877 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+html, body {
+    background-color:#fff; 
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.error {
+    color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.success {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 100% !important;
+}
+
+
+#form-message h2,
+#form-message span {
+    text-align: center;
+}
+
+#form-message h2 {
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+#form-message span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+
+.submit_success {
+    display: none !important;
+}
+
+.submit_error {
+    display: flex !important;
+    
+}
+
+.dataList {
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+
+
+/*******************************
+    NAVIGATION 
+**/
+
+.mainHeader {
+    margin-bottom: 20px;
+}
+
+.largeNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    margin: auto 0;
+    
+    background-image: url(Images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.largeNav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navLink {
+    color: #05386b;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navlink:hover {
+    background-color: #05386b;
+    color: #EDF5E1;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/********************
+    INDEX PAGE - Small Screen
+**/
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.heroImage {
+    background-image: url('Images/heroImage2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    order: 1;
+}
+
+.heading {
+    padding: 20px;
+    width: 80%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    order: 2;
+    margin: 0 auto;
+}
+
+.heading h1 {
+    margin: 0 auto;
+    font: 2rem 'Open Sans'
+}
+
+.mainCTA {
+    margin: 20px auto;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #379683;
+    color: #EDF5E1;
+}
+
+.mainCTA:hover {
+    cursor: pointer;
+}
+
+.mainCTA:active {
+    box-shadow: inset 4px 4px 4px 4px rgba(0,0,0, .1);
+}
+
+.mainCTA a {
+    height: 50px;
+    width: 150px;
+    color: #EDF5E1;
+    display: block;
+    line-height: 50px;
+}
+
+.heading span {
+   margin: 0 auto;
+   font-family: "Raleway", sans-serif;
+}
+
+
+.mainSection {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionTitle{
+    font: 1.5rem "Open Sans", sans-serif;
+}
+
+.serviceTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serviceHeader {
+    font: 1rem "Open Sans", sans-serif;
+    line-height: 24px;
+}
+
+.service {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.serviceIcon {
+    font-size: 1.5rem;
+    color: #000;
+    margin: auto 10px;
+}
+
+.service p {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.service a {
+    color: #379683;
+    text-decoration: underline;
+    font: 1rem "Open Sans", sans-serif;
+}
+
+/*******************************
+    GROOMING PAGE - SMALL
+**/
+
+.groomingHeroImage {
+    background-image: url(Images/groomingHeroImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 50vh;
+}
+
+.groomingForm {
+    width: 90%;
+    background-color: #fff;
+    margin: -4rem auto 1rem auto;
+    padding: 30px;
+    height: auto;
+}
+
+#groomingHeader {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+}
+
+.groomingFormContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input, select {
+    margin: 5px 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    padding: 3px;
+}
+
+#nameInfo, #addressInfo, #petInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#fname, #lname, #phone, #email, #address,
+#address2, #city, #state, #zip {
+    width: 100%;
+}
+
+#nameInfo, #addressInfo, #petInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#petInfo2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#checkbox {
+    margin-left: 10px;
+}
+
+#date {
+    margin-left: 10px;
+}
+
+#petInfo2 label { 
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+}
+
+#petName {
+    width: 100%;
+}
+
+#pet {
+    width: 100%
+}
+
+#dogBreed {
+    display: none;
+    width: 100%
+}
+
+#submitBtn {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background-color: #05386b;
+    color: #EDF5E1;
+    margin-top: 20px;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
+}
+
+.form_submit {
+   display: none;
+}
+
+/*******************************
+    CONTACT PAGE - SMALL
+**/
+
+.contactHeader {
+    background-image: url("Images/contactHeroImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 100vw;
+    height: 50vh;
+}
+
+.contactHeading {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.contact {
+    width: 90%; 
+    background-color: #fff;
+    padding: 30px;
+    margin: -4rem auto;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#firstName, #lastName, #contactEmail, #message {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+
+#message {
+    height: 300px;
+    margin-top: 5px;
+}
+
+#contactSubmit {
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: #EDF5E1;
+    background-color: #05386b;
+    margin: 20px auto;
+}
+
+/*******************************
+    LOCATION PAGE
+**/
+
+.locationHeading {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    
+    color: #fff;
+    font: 4rem "Raleway", sans-serif;
+
+}
+
+.locationHeader {
+    background-image: url(https://source.unsplash.com/CT8JAmljGC0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 50vh;
+}
+
+.shopLocation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: -4rem auto 20px auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.shopAddress {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.shopAddress p {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+
+.shopAddress ul {
+    margin: 20px 0;
+}
+
+.shopAddress ul li {
+    font-family: "Raleway", sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/*******************************
+    ADMIN PAGE
+**/
+
+table {
+    width: 95%;
+    margin:10px auto;
+    border-spacing: 0;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+td {
+    font-family: 'Raleway', sans-serif;
+    font-size: .85rem;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+th {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .85rem;
+    padding: 10px;
+    background-color: lightcoral;
+    color: #fff;
+    
+}
+
+.newRow {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#addBtn {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #379683;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#addBtn i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.fa-trash-alt {
+    color: red;
+    
+}
+
+.showForm {
+    display: 'block';
+}
+
+
+/*******************************
+    FOOTER
+**/
+
+.footer {
+    background-color: #05386b;
+    padding: 30px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.store-hours ul li, .location address span {
+    font-size: .75rem;
+    font-family: 'Raleway', sans-serif;
+    color: #EDF5E1;
+}
+
+.location address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.fab {
+    color: #EDF5E1;
+    font-size: 1rem;
+    margin: auto 0;
+}
+
+.vets ul li a {
+    color: #EDF5E1;
+    font: .75rem 'Raleway', sans-serif;
+}
+
+.vets {
+    text-align: center;
+}
+
+.vets span {
+    color: #EDF5E1;
+}
+
+
+/*******************************
+ABOUT PAGE - SMALL
+**/
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutHeader {
+    background-image: url("Images/aboutHeroImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+}
+
+.aboutHeader h1 {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+
+.aboutUs {
+    margin: -4rem auto;
+    background-color: #fff;
+    padding: 15px;
+    width: 90%;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    margin: 25px auto;
+    text-align: center;
+    flex: 1 1 150px;
+  
+}
+
+.about h2 {
+    margin: 5px;
+    font: 1.5rem "Open Sans", sans-serif;
+    color: #05386b;
+}
+
+.about p {
+    font: 1.125rem "Raleway", sans-serif;
+}
+
+.img-1 {
+    background-image: url(https://source.unsplash.com/Wx2AjoLtpcU);
+    background-position: top;
+}
+
+.img-2 {
+    background-image: url(https://source.unsplash.com/Y7C7F26fzZM);
+    background-position: center;
+}
+
+.img-3 {
+    background-image: url(https://source.unsplash.com/2guarBycJJQ);
+    background-position: center;
+}
+
+.img-4 {
+    background-image: url(https://source.unsplash.com/ROJFuWCsfmA);
+    background-position: center;
+}
+
+.img-5 {
+    background-image: url(https://source.unsplash.com/mEZ3PoFGs_k);
+    background-position: top;
+}
+
+.img-6 {
+    background-image: url(https://source.unsplash.com/vMV6r4VRhJ8);
+    background-position: center;
+}
+
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/*******************************
+    MEDIA QUERIES 
+**/
+
+@media only screen and (min-width: 750px) {
+    
+    .container {
+        width: 80%;
+    }
+
+/*******************************
+    Navigation
+**/
+
+    .largeNav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .largeNav ul li {
+        padding: 10px;
+    }
+
+    .navLink:hover {
+        background-color: #05386b;
+        color: #EDF5E1;
+    }
+
+  /*************************
+   INDEX PAGE - Large Screen
+   **/
+   
+.homepage {
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heroImage {
+    background-position: center;
+    width: 45vw;
+    height: 85vh;
+    order: 2;
+    margin-right: 5%;
+}
+
+.heading {
+    padding-left: 30px;
+    width: 50vw;
+    height: 85vh;
+    color: #000;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    order: 1
+}
+
+.heading h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.mainCTA {
+    margin: 0;
+    width: 150px;
+    height: 50px;
+}
+
+.heading span {
+   margin: 30px 0;
+}
+
+.services {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+.service {
+        width: 30%;
+        height: 300px;
+    }
+
+.sectionTitle {
+    margin: 60px 0;
+}
+
+
+/* Grooming Page */
+
+
+/* Dog Breed Select */
+
+#dogBreed {
+    display: none;
+}
+
+/*******************************
+    ABOUT PAGE
+**/
+
+.aboutUs {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+    margin: -4rem auto;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.aboutHeader {
+    height: 50vh;
+    background-image: url("Images/aboutHeroImg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutHeader h1 {
+    font-size: 4rem;
+}
+
+.about {
+   flex: 1 1 150px;
+}
+
+/*******************************
+    LOCATION PAGE
+**/
+
+.locationHeading {
+    font-size: 4em;
+}
+
+.shopLocation {
+    flex-direction: row;
+}
+
+.shopAddress {
+    width: 45%;
+    height: 50vh;
+}
+
+
+#map {
+    width: 45%;
+    height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

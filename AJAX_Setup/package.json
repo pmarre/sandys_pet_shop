@@ -1,0 +1,14 @@
+{
+  "name": "ajaxbasicssolutions",
+  "description": "Ajax Basics - Solutions",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "pug": "latest",
+    "serve-index": "latest",
+    "sqlite3": "latest"
+  }
+}
